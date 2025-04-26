@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./home.css">
+</head>
+<body>
+    <div class="cannonier-tab-holder" id="cannonier-tab">
+        <div class="cannonier-tab-closer">
+            <span class="cannonier-tab-closer-span" id="cannonier-close">&times;</span>
+        </div>
+        <div class="cannonier-top-row">
+            <div class="cannonier-tab-img-holder">
+                <img class="cannonier-tab-img-holder-img" src="./cannonier.png" alt=""/>
+            </div>
+            <div class="cannonier-top-column">
+                <span class="connonier-tab-job-name">Software Engineering Software Engineering</span>
+                <span class="connonier-tab-job-calisnetics">W3Schools | USA</span>
+            </div>
+        </div>
+        <div class="cannonier-content-holder">
+            <div class="cannonier-input-holder">
+                <span class="cannonier-input-holder-span">Company</span>
+                <input class="cannonier-input-holder-input" type="text" name="" id="cannonier_company_name" value="W3Schools"/>
+            </div>
+            <div class="cannonier-input-holder">
+                <span class="cannonier-input-holder-span">Job Title</span>
+                <input class="cannonier-input-holder-input" type="text" name="" id="cannonier_job_name" value="Software Engineering"/>
+            </div>
+            <div class="cannonier-input-holder">
+                <span class="cannonier-input-holder-span">Job Location</span>
+                <input class="cannonier-input-holder-input" type="text" name="" id="cannonier_job_name" value="22, Welock Street, Los Angeles, United States of America"/>
+            </div>
+            <div class="cannonier-input-holder">
+                <span class="cannonier-input-holder-span">Job Link</span>
+                <input class="cannonier-input-holder-input" type="text" id="cannonier_job_name" value="https://www.linkedin.com/jobs/collections/recommended/"/>
+            </div>
+            <div class="cannonier-input-holder">
+                <span class="cannonier-input-holder-span">Description</span>
+                <div class="cannonier-content-editable" contenteditable="true">
+                    <b>Job Description</b>
+                </div>
+            </div>
+        </div>
+        <div class="cannonier_tab-loader-band"></div>
+        <div class="cannonier-button-holder">
+            <button class="cannonier-button-holder-button">Save to board</button>
+        </div>
+    </div>
+
+
+
+    <div class="cannonier-success-tab cannonier-non-display" id="cannonier-success-tab">
+        <div class="cannonier-success-closer">
+            <span class="cannonier-success-closer-span" id="cannonier-success-close">&times;</span>
+        </div>
+        <div class="cannonier-success-long-tab-row">
+            <img src="./icon-128.png" alt="" class="cannonier-success-tab-img"/>
+            <span class="cannonier-success-tab-cap">Conneer<sup class="cannonier-success-tab-sup">TM</sup></span>
+        </div>
+        <div class="cannonier-success-col-long">
+            <span class="cannonier-success-check-text">&check;</span>
+            <span class="cannonier-success-tab-text">Your Job has been saved successfully</span>
+            <button class="cannonier-success-tab-dbd-btn">
+                <a href="www.google.com" target="_blank" class="cannonier-success-tab-dbd-btn-a">View Dashboard</a>
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="connonier-trigger-btn cannonier-display" id="cannonier-trigger">
+        <img src="./icon-128.png" class="connonier-trigger-btn-img cannonier-display" id="cannonier-trigger-img" alt=""/>
+    </div>
+    <script type="text/javascript">
+        !function(){
+            let cannonier_trigger = document.querySelector('#cannonier-trigger');
+            let cannonier_img = document.querySelector('#cannonier-trigger-img');
+            let cannonier_tab = document.querySelector('#cannonier-tab');
+            let cannonier_close = document.querySelector('#cannonier-close');
+
+            cannonier_img.addEventListener('click', function(){
+                cannonier_trigger.classList.replace('cannonier-display','cannonier-non-display');
+                cannonier_img.classList.replace('cannonier-display','cannonier-non-display');
+                cannonier_tab.classList.replace('cannonier-non-display','cannonier-display');
+            });
+            cannonier_close.addEventListener('click', function(){
+                cannonier_tab.classList.replace('cannonier-display','cannonier-non-display');
+                cannonier_trigger.classList.replace('cannonier-non-display','cannonier-display');
+                cannonier_img.classList.replace('cannonier-non-display','cannonier-display');
+            });
+        }();
+    </script>
+</body>
+</html>
